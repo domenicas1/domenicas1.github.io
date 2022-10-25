@@ -22,3 +22,10 @@
    padding: 8px;
 
 }
+
+body
+.questions {
+    background-color: rgba(212, 158, 137, 0.892);
+    max-width: 200px;
+}
+
