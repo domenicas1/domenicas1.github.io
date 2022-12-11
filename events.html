@@ -1,0 +1,28 @@
+<html>
+    <body onmousemove="showCoords(e)">
+        <style>
+            div {
+                width: 200px; height: 200px;padding:1em; background-color: red; font-size: 24pt; 
+            }
+        </style>
+        <div onmouseover="foo()">   
+            catch me if you can...</div>
+    </body>
+    <script>
+        const $ = document.querySelector.bind(document);
+        function foo(e){
+            d=$('div');
+            $('div').style.left= (Math.random()*90) + '%';
+            $('div').style.top='50%';
+
+        }
+        function showKey (e){
+           $('div').innerHTML = 'you pressed' +e.Key;
+        }
+        function showCoords (e){
+           $('div').innerHTML = 'mouse coords' +e.clientX+e.clientY;
+        }
+        windo.onkeydown= showKey;
+        window.onmousemove = showCoords;
+    </script>
+        </html>

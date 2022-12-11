@@ -1,0 +1,29 @@
+*{
+    padding: 5px;
+    margin: 5px;
+  /*  border: solid 1px gray; */
+    border-radius: 5px;
+    min-height: 3em;
+}
+
+.header{
+background-color: aqua;
+}
+
+.footer{
+background-color: brown;   
+}
+
+.root {
+height: 100%;
+width: 400px;
+}
+
+.item > div {
+    border: solid 1px gray;
+}
+
+.done {
+    background-color: gray;
+
+}
